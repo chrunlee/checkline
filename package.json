@@ -1,0 +1,25 @@
+{
+  "name": "checkline",
+  "version": "1.0.0",
+  "description": "检查符合提交的一些代码文件内的代码行数和注释行数",
+  "dependencies": {
+    "async": "^2.6.0",
+    "colors": "^1.2.1",
+    "iconv-lite": "^0.4.21",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrunlee/checkline.git"
+  },
+  "author": "chrunlee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrunlee/checkline/issues"
+  },
+  "homepage": "https://github.com/chrunlee/checkline#readme"
+}

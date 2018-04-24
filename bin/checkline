@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+var os = require('os');
+var fs = require('fs');
+var path = require('path');
+var colors = require('colors');
+var Finder = require('../lib/finder');
+
+var argv = require("minimist")(process.argv.slice(2), {
+  alias: {
+    'directory': 'd',
+    'extension': 'e',
+    'help' : 'h'
+  },
+  boolean: ['help'],
+  'default': {
+    'extension': 'js',
+    'directory': process.cwd()
+  }
+});
+
+if (argv.help) {
+  console.log("Usage:".green);
+  console.log("  checkline --help // print help information".green);
+  console.log("  checkline // check directory of js files".green);
+  console.log("  checkline -d /home // home as root".green);
+  console.log("  checkline -e js,css // target file is js and css".green);
+  process.exit(0);
+}
+
+new Finder(argv.directory,argv.extension);
