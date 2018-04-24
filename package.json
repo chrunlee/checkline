@@ -1,7 +1,10 @@
 {
   "name": "checkline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "检查符合提交的一些代码文件内的代码行数和注释行数",
+  "bin": {
+    "checkline": "./bin/checkline"
+  },
   "dependencies": {
     "async": "^2.6.0",
     "colors": "^1.2.1",
